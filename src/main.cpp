@@ -245,7 +245,7 @@ class $modify(EditLevelLayer) {
 // TODO: Check Cheat Indicator position
 CircleButtonSprite* createCheatIndicator(bool isHacking) {
     auto winSize = CCDirector::sharedDirector()->getWinSize();
-    auto cheatIndicator = CircleButtonSprite::create(CCNode::create(), (isHacking) ? CircleBaseColor::Pink : CircleBaseColor::Green, CircleBaseSize::Tiny); //, CircleBaseColor::Geode
+    auto cheatIndicator = CircleButtonSprite::create(CCNode::create(), (isHacking) ? CircleBaseColor::Green : CircleBaseColor::Green, CircleBaseSize::Tiny); //, CircleBaseColor::Geode
     cheatIndicator->setAnchorPoint({1,1});
     cheatIndicator->setPosition({28, winSize.height});
     cheatIndicator->setZOrder(1000);
